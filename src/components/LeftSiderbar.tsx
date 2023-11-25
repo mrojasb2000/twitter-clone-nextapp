@@ -43,9 +43,7 @@ const NAVIGATION_ITEMS = [
 
 const Leftsidebar = () => {
   return (
-    <div className="w-full h-full flex justify-center items-center relative bg-black">
-      <div className="max-w-screen-xl w-full h-full flex relative">
-        <section className="fixed w-[275px] flex flex-col items-stretch h-screen">
+        <section className="fixed w-[275px] flex flex-col items-stretch h-screen px-6">
           <div className='flex flex-col items-stretch h-full space-y-4 mt-4'>
             {NAVIGATION_ITEMS.map((item) => (
                 <Link className='hover:bg-white/10 text-2xl transition duration-200 flex items-center justify-start w-fit space-x-2 rounded-3xl p-2 px-6' href={`/${item.title.toLowerCase()}`} key={item.title}>
@@ -78,10 +76,6 @@ const Leftsidebar = () => {
             </button>
           </div>
         </section>
-        <main></main>
-        <section></section>
-      </div>
-    </div>
   )
 }
 
